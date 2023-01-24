@@ -39,6 +39,7 @@ body {
 
 .main{
     margin-left: 40px;
+    
 }
 
 .support{
@@ -58,7 +59,7 @@ body {
     position: absolute;
     font-size: 64px;
     line-height: 78px;
-    margin-top: 250px;
+    padding-top: 250px;
     margin-left: 100px;
 }
 
@@ -68,7 +69,7 @@ body {
 }
 
 .main-description{
-    margin-top: 450px;
+    padding-top: 450px;
     margin-left: 105px;
     font-size: 18px;
     line-height: 22px;

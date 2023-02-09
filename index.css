@@ -7,91 +7,84 @@ html {
     box-sizing: inherit;
   }
   
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
+  body{
+    width: 1200px;
+    margin: auto;
+    padding: auto;
     font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url('images/mainbackground.png');
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
+.title{
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: 400;
+}
 
+.description{
+    font-size: 18px;
+    line-height: 22px;
+}
 
-.logo{
-    display: inline;
+.text{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.button{
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #ECB942;
+    border: 0;
+    border-radius: 8px;
+}
+
+.header{
+    display: flex;
+    margin-top: 20px;
+}
+
+.header-logo{
     width: 231px;
-    margin-left: 392px;
 }
 
-.header-menu{
-    vertical-align: middle;
-    display: inline;
+.list{
+    display: flex;
+    list-style: none;
+}
+
+.item{
+    display: flex;
+    margin-left: 40px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
 }
 
-.main{
-    margin-left: 40px;
+.item__link{
+    text-decoration: none;
+    color: black;
 }
 
-.support{
-    margin-left: 40px;
+.intro{
+    margin-top: 180px;
 }
 
-.blog{
-    margin-left: 40px;
-}
-
-.contacts{
-    margin-left: 40px;
-}
-
-
-.main-title{
-    position: absolute;
+.intro__title{
     font-size: 64px;
     line-height: 78px;
-    margin-top: 250px;
-    margin-left: 100px;
 }
 
-.main-background{
-    position: relative;
-    float: right;
-}
-
-.main-description{
-    margin-top: 450px;
-    margin-left: 105px;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.wrapper-button{
-    display: inline;
-}
-
-.gave-books{
-    display: inline;
-    border-radius: 8px;
+.intro__button{
+    margin-top: 80px;
     height: 55px;
     width: 233px;
-    margin-left: 100px;
-    background-color: #ECB942;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 600;
 }
 
-.more{
-    display: inline;
+.intro__link{
     text-decoration: none;
     color: black;
     margin-left: 46px;
@@ -99,218 +92,138 @@ body {
     line-height: 27px;
 }
 
-.purposes-title{
-    margin-top: 183px;
+.purpose{
+    display: flex;
+    justify-content: space-evenly; 
+    text-align: center;   
+    margin-top: 260px;
+}
+
+.visually-hidden{
+    position: fixed;
+  transform: scale(0);
+}
+
+.box__title{
     font-size: 36px;
     line-height: 44px;
 }
 
-.save-trees{
-    display: inline;
-    margin-left: 250px;
-}
-
-.education{
-    display: inline;
-    margin-left: 55px;
-}
-
-.charity{
-    display: inline;
-    margin-left: 55px;
-}
-
-.purposes-description{
+.box__description{
     margin-top: 29px;
     font-size: 18px;
     line-height: 27px;
 }
 
-.first-description{
-    display: inline-block;
-    width: 20%;
-    text-align: center;
-    margin-left: 300px;
+.box__link{
+    color: black;
+    font-weight: 600;
 }
 
-.second-description{
-    display: inline-block;
-    width: 20%;
-    text-align: center;
-    margin-left: 80px;
-}
-
-.third-description{
-    display: inline-block;
-    width: 20%;
-    text-align: center;
-    margin-left: 80px;
-}
-
-.img-group{
-    display: inline;
-    position: relative;
+.rules{
+    display: flex;
     margin-top: 165px;
-    margin-left: 200px;
 }
 
-.condition-title{
-    display: inline;
-    position: absolute;
-    float: left;
-    margin-top: 211px;
+.rules__title{
     font-size: 48px;
     line-height: 58px;
+    font-weight: 400;
 }
 
-.first-condition{
-    display: inline;
-    position: absolute;
-    margin-top: 332px;
+.rules__text{
     margin-left: 127px;
-    font-size: 24px;
-    line-height: 29px;
+    margin-top: 30px;
     font-weight: 600;
 }
 
-.second-condition{
-    display: inline;
-    position: absolute;
-    margin-top: 435px;
-    margin-left: 127px;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 600;
-}
-
-.delivery{
-    display: inline;
-    position: absolute;
-    margin-top: 591px;
+.rules__description{
+    margin-top: 49px;
     margin-left: 58px;
-    font-size: 18px;
-    line-height: 22px;
 }
 
-.second-gave-books{
-    display: inline;
-    position: absolute;
+.rules__button{
     height: 50px;
     width: 256px;
-    background-color:#ECB942;
-    text-decoration: none;
-    margin-top: 758px;
+    margin-top: 70px;
     margin-left: 130px;
-    border-radius: 8px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-.mission-title{
-    position: absolute;
-    text-align: center;
-    font-size: 48px;
-    line-height: 58px;
-    margin-top: 170px;
-    margin-left: 260px;
-}
-
-.diagram{
-    position: relative;
-    float: right ;
-    margin-top: 140px;
-    margin-right: 260px;
-}
-
-.mission-desc{
-    display: inline;
-    position: absolute;
-    margin-top: 320px;
-    margin-left: 260px;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.our-partners-title{
-    text-align: center;
-    margin-top: 710px;
-    font-size: 48px;
-    line-height: 58px;
-}
-
-.our-partners{
-    display: inline;
-    margin-top: 86px;
-    margin-left: 180px;
-}
-
-.involed-header{
-    display: block;
-    margin-top: 235px;
-    height: 418px;
-    width: 1130px;
-}
-
-.involed-img{
+.mission{
     display: flex;
-    position: relative;
-    margin-left: 280px;
+    margin-top: 140px;
 }
 
-.involed-title{
-    position: absolute;
-    z-index: 100;
-    margin-top: -350px;
-    margin-left: 600px;
-    color: white;
-    font-size: 48px;
-    line-height: 58px;
+.mission__title{
     text-align: center;
 }
 
-.involed-desc{
-    position: absolute;
-    z-index: 100;
-    margin-top: -200px;
-    margin-left: 400px;
+.partners__title{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.partners__img{
+    margin-top: 86px;
+    margin-left: 60px;
+}
+
+.promo{
+    background-image: url('images/decor.png');
+    margin-top: 235px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 418px;
+}
+
+.promo__title{
+    padding-top: 40px;
     color: white;
-    font-size: 18px;
-    line-height: 22px;
     text-align: center;
 }
 
-.end{
-    margin-top: 100px;
+.promo__description{
+    padding-left: 90px;
+    padding-right: 90px;
+    color: white;
+    text-align: center;
 }
 
-.our-contacts{
-    display: inline;
-    margin-left: 400px;
-    font-size: 18px;
-    line-height: 22px;
+.promo__button{
+    height: 55px;
+    width: 265px;
+    margin-top: 30px;
+    margin-left: 450px;
 }
 
-.number{
-    margin-top: 22px;
-    margin-left: 546px;
+.footer__contacts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 98px;
+}
+
+.phone{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
     font-size: 24px;
     line-height: 29px;
 }
 
-.logo-footer{
+.footer__logo{
     height: 40px;
     width: 231px;
     margin-top: 100px;
-    margin-left: 740px;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.law{
+.footer__copyright{
+    text-align: center;
     margin-bottom: 65px;
-    margin-left: 700px;
     font-size: 14px;
     line-height: 18px;
 }

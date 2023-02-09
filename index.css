@@ -8,8 +8,9 @@ html {
   }
   
   body{
-    margin: 0;
-    padding: 0;
+    width: 1200px;
+    margin: auto;
+    padding: auto;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     background-image: url('images/mainbackground.png');
@@ -17,9 +18,32 @@ html {
     background-position: right top;
 }
 
+.title{
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: 400;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.text{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.button{
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #ECB942;
+    border: 0;
+    border-radius: 8px;
+}
+
 .header{
     display: flex;
-    margin-left: 392px;
     margin-top: 20px;
 }
 
@@ -27,52 +51,40 @@ html {
     width: 231px;
 }
 
-.header-list{
-    display: inline;
-    margin: 0;
-    padding: 0;
+.list{
+    display: flex;
+    list-style: none;
 }
 
-.header-item{
-    display: inline;
+.item{
+    display: flex;
     margin-left: 40px;
-    text-decoration: none;
-    color: black;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
 }
 
-.main-section{
-    height: 370px;
-    width: 668px;
-    margin-left: 340px;
+.item__link{
+    text-decoration: none;
+    color: black;
+}
+
+.intro{
     margin-top: 180px;
 }
 
-.main-section__title{
+.intro__title{
     font-size: 64px;
     line-height: 78px;
-    font-weight: 400;
 }
 
-.main-section__subtitle{
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.main-section__button{
+.intro__button{
     margin-top: 80px;
     height: 55px;
     width: 233px;
-    background-color: #ECB942;
-    border-radius: 8px;
-    border: 0;
-    font-size: 18px;
-    line-height: 27px;
 }
 
-.main-section__link{
+.intro__link{
     text-decoration: none;
     color: black;
     margin-left: 46px;
@@ -80,13 +92,11 @@ html {
     line-height: 27px;
 }
 
-.box-purpose{
+.purpose{
     display: flex;
     justify-content: space-evenly; 
     text-align: center;   
     margin-top: 260px;
-    margin-left: 250px;
-    margin-right: 250px;
 }
 
 .visually-hidden{
@@ -94,28 +104,25 @@ html {
   transform: scale(0);
 }
 
-.box-purpose__title{
+.box__title{
     font-size: 36px;
     line-height: 44px;
-    font-weight: 400;
 }
 
-.box-purpose__desc{
+.box__description{
     margin-top: 29px;
     font-size: 18px;
     line-height: 27px;
 }
 
-.box-purpose__link{
+.box__link{
     color: black;
     font-weight: 600;
 }
 
 .rules{
     display: flex;
-    justify-content: center;
     margin-top: 165px;
-    margin-left: 200px;
 }
 
 .rules__title{
@@ -124,136 +131,99 @@ html {
     font-weight: 400;
 }
 
-.rules__desc{
-    width: 30%;
+.rules__text{
     margin-left: 127px;
     margin-top: 30px;
-    font-size: 24px;
-    line-height: 29px;
     font-weight: 600;
 }
 
-.rules__text{
+.rules__description{
     margin-top: 49px;
     margin-left: 58px;
-    font-size: 18px;
-    line-height: 22px;
 }
 
 .rules__button{
     height: 50px;
     width: 256px;
-    background-color:#ECB942;
-    border: 0;
     margin-top: 70px;
     margin-left: 130px;
-    border-radius: 8px;
-    font-size: 18px;
-    line-height: 22px;
     font-weight: 400;
 }
 
 .mission{
     display: flex;
     margin-top: 140px;
-    margin-left: 260px;
-    margin-right: 300px;
 }
 
 .mission__title{
     text-align: center;
-    font-size: 48px;
-    line-height: 58px;
-    font-weight: 400;
-}
-
-.mission-desc{
-    font-size: 18px;
-    line-height: 22px;
 }
 
 .partners__title{
     text-align: center;
     margin-top: 150px;
-    font-size: 48px;
-    line-height: 58px;
-    font-weight: 400;
 }
 
 .partners__img{
     margin-top: 86px;
-    margin-left: 150px;
+    margin-left: 60px;
 }
 
 .promo{
     background-image: url('images/decor.png');
-    margin-left: 300px;
     margin-top: 235px;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 418px;
-    width: 1130px;
 }
 
 .promo__title{
     padding-top: 40px;
     color: white;
-    font-size: 48px;
-    line-height: 58px;
     text-align: center;
-    font-weight: 400;
 }
 
-.promo__desc{
+.promo__description{
     padding-left: 90px;
     padding-right: 90px;
     color: white;
-    font-size: 18px;
-    line-height: 22px;
     text-align: center;
 }
 
 .promo__button{
     height: 55px;
     width: 265px;
-    background-color:#ECB942;
-    border: 0;
     margin-top: 30px;
-    margin-left: 420px;
-    border-radius: 8px;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 400;
+    margin-left: 450px;
 }
 
-.footer-text{
+.footer__contacts{
     display: flex;
-    margin-top: 100px;
+    justify-content: space-around;
+    margin-top: 98px;
 }
 
-.our-contacts{
-    display: inline;
-    margin-left: 400px;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.number{
-    margin-top: 22px;
-    margin-left: 546px;
+.phone{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
     font-size: 24px;
     line-height: 29px;
 }
 
-.logo-footer{
+.footer__logo{
     height: 40px;
     width: 231px;
     margin-top: 100px;
-    margin-left: 740px;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.law{
+.footer__copyright{
+    text-align: center;
     margin-bottom: 65px;
-    margin-left: 700px;
     font-size: 14px;
     line-height: 18px;
 }

@@ -30,11 +30,11 @@
             <li class="list__item item">
               <a href="/" class="item__link"> Главная </a>
             </li>
-            <li class="list__item item">
-              <a href="/" class="item__link"> Блог </a>
+            <li>
+              <a href="/" class="support__link"> Поддержать </a>
             </li>
             <li class="list__item item">
-              <a href="/" class="item__link"> Поддержать </a>
+              <a href="/" class="item__link"> Блог </a>
             </li>
             <li class="list__item item">
               <a href="/" class="item__link"> Контакты </a>
@@ -42,7 +42,7 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="main-container">
         <section class="intro">
           <h1 class="intro__title title">
             Передай книгу. <br />
@@ -52,13 +52,21 @@
             Думаете, куда можно отдать старые книги? <br />
             Вы можете передать их в благотворительный фонд.
           </p>
-          <button class="intro__button button">Передать книги</button>
-          <a href="/" class="intro__link link"> Подробнее</a>
+          <div class="intro__group">
+            <div class="group__button">
+              <button class="intro__button button">Передать книги</button>
+              <button class="second__button button">Подробнее</button>
+            </div>
+            <div class="intro__number">
+              <p class="title">155 785</p>
+              <p class="description">книг переработано</p>
+            </div>
+          </div>
         </section>
         <section class="purpose">
           <h2 class="visually-hidden">Цели</h2>
           <div class="purpose__box box">
-            <h3 class="box__title title">Спасём деревья</h3>
+            <h3 class="box__title title first">Спасём деревья</h3>
             <p class="box__description description">
               Прекратим вырубку леса и посадим новые деревья с
               <a href="/" class="box__link link"> www.trees.org.</a> Поддержим
@@ -66,7 +74,7 @@
             </p>
           </div>
           <div class="purpose__box box">
-            <h3 class="box__title title">Образование</h3>
+            <h3 class="box__title title second">Образование</h3>
             <p class="box__description description">
               Поддержим школы вместе с
               <a href="/" class="box__link link"> www.donorschoose.org.</a>
@@ -75,7 +83,7 @@
             </p>
           </div>
           <div class="purpose__box box">
-            <h3 class="box__title title">Благотворительность</h3>
+            <h3 class="box__title title third">Благотворительность</h3>
             <p class="box__description description">
               Пересылаем книги в Африку с
               <a href="/" class="box__link link"> www.betterworldbooks.com.</a>
@@ -86,14 +94,14 @@
         </section>
         <section class="rules">
           <div>
-            <img class="rules__img" src="images/imgs.png" alt="change world" />
+            <img class="rules__img" src="images/imgs.png" alt="Изменим мир" />
           </div>
-          <div>
+          <div class="rules__wrap">
             <h2 class="rules__title title">Как это работает?</h2>
-            <p class="rules__text text">
+            <p class="rules__text text first-vector">
               Вы отдаёте 1 коробку книг = мы сажаем 10 деревьев
             </p>
-            <p class="rules__text text">
+            <p class="rules__text text second-vector">
               Вы отдаёте 1 коробку книг = мы финансируем образовательный проект
             </p>
             <p class="rules__description description">
@@ -108,10 +116,7 @@
         </section>
         <section class="mission">
           <div>
-            <h2 class="mission__title title">
-              Наша миссия на <br />
-              2023 год
-            </h2>
+            <h2 class="mission__title title">Наша миссия на 2023 год</h2>
             <p class="mission__description description">
               Наша основная цель: спасти и посадить столько деревьев, сколько
               сможем и в то же время помочь каждому, кто хочет передать ненужные
@@ -121,36 +126,22 @@
               вырубки леса.
             </p>
           </div>
-          <img class="mission__img" src="images/diagram.png" alt="diagram" />
+          <img class="mission__img" src="images/diagram.svg" alt="Диаграмма" />
         </section>
         <section class="partners">
           <h2 class="partners__title title">Наши партнёры</h2>
-          <img
-            class="partners__img"
-            src="images/brand1.svg"
-            alt=" Логотип компании trees"
-          />
-          <img
-            class="partners__img"
-            src="images/brand2.svg"
-            alt="Логотип компании betterworldbooks"
-          />
-          <img
-            class="partners__img"
-            src="images/brand3.svg"
-            alt="Логотип компании bookstore"
-          />
-          <img
-            class="partners__img"
-            src="images/brand4.svg"
-            alt="Логотип компании donorschoose"
-          />
+          <div class="partners__img">
+            <img src="images/brand1.svg" alt=" Логотип компании trees" />
+            <img
+              src="images/brand2.svg"
+              alt="Логотип компании betterworldbooks"
+            />
+            <img src="images/brand3.svg" alt="Логотип компании bookstore" />
+            <img src="images/brand4.svg" alt="Логотип компании donorschoose" />
+          </div>
         </section>
         <section class="promo">
-          <h3 class="promo__title title">
-            Как стать участником <br />
-            акции?
-          </h3>
+          <h3 class="promo__title title">Как стать участником акции?</h3>
           <p class="promo__description description">
             Пожалуйста заполните форму для того, чтобы оформить отгрузку книг.
             Мы также принимаем пожертвования от школ и ВУЗов. Если в Вашем
@@ -161,13 +152,15 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__contacts">
-          <div>
+        <div class="footer__description">
+          <div class="footer__contacts">
             <p class="footer__text text">
               Позвоните нам, если остались вопросы
             </p>
-            <img class="phone__img" src="images/phone.svg" alt="Телефон" />
-            <a href="+79999999999" class="phone">+7 999 999 99 99</a>
+            <div class="footer__phone">
+              <img class="phone__img" src="images/phone.svg" alt="Телефон" />
+              <a href="+79999999999" class="phone">+7 999 999 99 99</a>
+            </div>
           </div>
           <div class="footer__media">
             <p class="footer__text text">Мы в соцсетях</p>
@@ -179,7 +172,7 @@
           </div>
         </div>
         <div class="footer__logo">
-          <img src="images/logo.svg" alt="logo" />
+          <img src="images/logo.svg" alt="Фонд Second book" />
         </div>
         <p class="footer__copyright">© 2022 Second Book. Все права защищены.</p>
       </footer>

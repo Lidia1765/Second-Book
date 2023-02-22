@@ -16,6 +16,14 @@ html {
     background-position: right top;
 }
 
+:root{
+    --orange: #ECB942;
+    --light-grey: rgb(255, 255, 255, 0.7);
+    --gray: rgb(128, 128, 128);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255)
+}
+
 .title{
     font-size: 48px;
     line-height: 59px;
@@ -35,7 +43,7 @@ html {
 .button{
     font-size: 18px;
     line-height: 27px;
-    background-color: #ECB942;
+    background-color: var(--orange);
     border: 0;
     border-radius: 8px;
     cursor: pointer;
@@ -43,8 +51,8 @@ html {
 
 .main-container{
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: auto;
+    padding: auto;
 }
 
 .main-container::before{
@@ -55,27 +63,37 @@ html {
     left: 0;
     width: 100%;
     height: 90px;
-    background: rgb(255, 255, 255, 0.7);
+    background: var(--light-grey);
     background-repeat: no-repeat;
+}
+
+.main{
+    max-width: 1200px;
 }
 
 .header{
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+    height: 90px;
 }
 
 .header-logo{
     width: 231px;
 }
 
+.nav{
+    padding-left: 40px;
+}
+
 .list{
     display: flex;
     list-style: none;
+    padding: 0;
+    gap: 40px;
 }
 
 .item{
     display: flex;
-    margin-left: 40px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
@@ -83,13 +101,12 @@ html {
 
 .item__link{
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 .support__link{
     position: relative;
-    color: black;
-    margin-left: 46px;
+    color: var(--black);
     font-size: 18px;
     line-height: 27px;
     font-weight: 600;
@@ -103,14 +120,22 @@ html {
     left: -5px;
     width: 140px;
     height: 40px;
-    background-image: url(images/spot1.svg);
+    background-image: url(images/spot-nav.svg);
 }
 
 .intro{
-    margin-top: 180px;
+    padding-top: 180px;
+    display: flex;
+}
+
+.intro__description{
+    display: flex;
+    flex-direction: column;
+    width: 580px;
 }
 
 .intro__title{
+    position: relative;
     font-size: 64px;
     line-height: 78px;
     font-weight: 400;
@@ -120,10 +145,10 @@ html {
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: 460px;
+    top: 40px;
     width: 242px;
     height: 32px;
-    background-image: url(images/spot2.svg);
+    background-image: url(images/spot-intro.svg);
     background-repeat: no-repeat;
 }
 
@@ -133,13 +158,14 @@ html {
 
 .group__button{
     display: flex;
-    margin-top: 80px;
+    padding-top: 80px;
+    gap: 20px;
 }
 
 .intro__button{
     height: 55px;
     width: 233px;
-    box-shadow: 3px 3px 10px gray;
+    box-shadow: 3px 3px 10px, var(--gray);
 }
 
 .second__button{
@@ -153,15 +179,20 @@ html {
 
 .intro__link{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     margin-left: 46px;
     font-size: 18px;
     line-height: 27px;
 }
 
 .intro__number{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     position: relative;
     padding-left: 250px;
+    padding-bottom: 150px;
     margin: 0;
 }
 
@@ -169,12 +200,19 @@ html {
     content: "";
     position: absolute;
     z-index: -1;
-    right: 0;
-    bottom: 60px;
-    background-color:#ECB942;
+    bottom: 150px;
+    background-color: var(--orange);
     width: 96px;
     height: 96px;
     border-radius: 50px;
+}
+
+.number__title{
+    margin: 0;
+}
+
+.number__description{
+    margin: 0;
 }
 
 .purpose{
@@ -189,11 +227,11 @@ html {
   transform: scale(0);
 }
 
-.first{
+.title--trees{
     position: relative;
 }
 
-.first::before{
+.title--trees::before{
     content: "";
     position: absolute;
     z-index: -1;
@@ -201,15 +239,15 @@ html {
     left: 120px;
     height: 83px;
     width: 69px;
-    background-image: url(images/Vector1.svg);
+    background-image: url(images/Vector-plant.svg);
     background-repeat: no-repeat;
 }
 
-.second{
+.title--education{
     position: relative;
 }
 
-.second::before{
+.title--education::before{
     content: "";
     position: absolute;
     z-index: -1;
@@ -217,15 +255,33 @@ html {
     left: 120px;
     height: 66px;
     width: 81px;
-    background-image: url(images/Vector2.svg);
+    background-image: url(images/Vector-book.svg);
     background-repeat: no-repeat;
 }
 
-.third{
+.description--education{
     position: relative;
 }
 
-.third::before{
+.description--education::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -50px;
+    left: -40px;
+    width: 405px;
+    height: 245px;
+    background-image: url(images/spot-purpose.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.title--charity{
+    position: relative;
+}
+
+.title--charity::before{
     content: "";
     position: absolute;
     z-index: -1;
@@ -233,7 +289,7 @@ html {
     left: 120px;
     height: 76px;
     width: 64px;
-    background-image: url(images/Vector3.svg);
+    background-image: url(images/Vector-earth.svg);
     background-repeat: no-repeat;
 }
 
@@ -249,21 +305,8 @@ html {
     line-height: 27px;
 }
 
-.purpose::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: -450px;
-    left: 600px;
-    width: 405px;
-    height: 245px;
-    background-image: url(images/spot3.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .box__link{
-    color: black;
+    color: var(--black);
     font-weight: 600;
 }
 
@@ -282,8 +325,9 @@ html {
 .rules__wrap{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center ;
     width: 485px;
+    padding-left: 60px;
 }
 
 .rules__title{
@@ -291,6 +335,7 @@ html {
     font-size: 48px;
     line-height: 58px;
     font-weight: 400;
+    width: 485px;
 }
 
 .rules__title::before{
@@ -301,7 +346,7 @@ html {
     right: 60px;
     width: 242px;
     height: 42px;
-    background-image: url(images/spot4.svg);
+    background-image: url(images/spot-rules.svg);
     background-repeat: no-repeat;
 }
 
@@ -311,33 +356,33 @@ html {
     font-weight: 600;
 }
 
-.first-vector::before{
+.text--vector-tree::before{
     content: "";
     position: absolute;
     z-index: -1;
-    left: -80px;
+    left: -60px;
     width: 43px;
     height: 51px;
-    background-image: url(images/Vector4.svg);
+    background-image: url(images/Vector-small-plans.svg);
     background-repeat: no-repeat;
 }
 
-.second-vector::before{
+.text--vector-book::before{
     content: "";
     position: absolute;
     z-index: -1;
-    left: -80px;
+    left: -60px;
     bottom: 30px;
     width: 50px;
     height: 40px;
-    background-image: url(images/Vector5.svg);
+    background-image: url(images/Vector-small-book.svg);
     background-repeat: no-repeat;
 }
 
 .rules__description{
     width: 426px;
     padding-bottom: 56px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .rules__button{
@@ -349,7 +394,9 @@ html {
 
 .mission{
     display: flex;
-    margin-top: 140px;
+    padding-top: 140px;
+    justify-content: center;
+    gap: 50px;
 }
 
 .mission__title{
@@ -367,32 +414,37 @@ html {
     left: 20%;
     width: 242px;
     height: 40px;
-    background-image: url(images/spot5.svg);
+    background-image: url(images/spot-mission.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.mission__description{
+    height: 280px;
+    width: 454px;
+}
+
 .partners__title{
     text-align: center;
-    margin-top: 150px;
+    padding-top: 150px;
 }
 
 .partners__img{
     position: relative;
     display: flex;
     justify-content: space-around;
-    margin-top: 86px;
+    padding-top: 86px;
 }
 
 .partners__img::before{
     content:"";
     position: absolute;
     z-index: -1;
-    top: -15px;
+    bottom: -30px;
     left: 620px;
     width: 322px;
     height: 130px;
-    background-image: url(images/spot6.svg);
+    background-image: url(images/spot-partner.svg);
     background-repeat: no-repeat;
 }
 
@@ -413,23 +465,22 @@ html {
     content: "";
     position: absolute;
     z-index: -1;
-    right: -180px;
     top: -130px;
     width: 1490px;
     height: 541px;
-    background-image: url(images/spot7.svg);
+    background-image: url(images/spot-promo.svg);
     background-repeat: no-repeat;
 }
 
 .promo__title{
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
 .promo__description{
     width: 939px;
     height: 84px;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -459,7 +510,7 @@ html {
 
 .phone{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-size: 24px;
     line-height: 29px;
 }
@@ -468,6 +519,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.media__link{
+    text-decoration: none;
 }
 
 .footer__logo{
@@ -484,4 +539,184 @@ html {
     margin-bottom: 65px;
     font-size: 14px;
     line-height: 18px;
+}
+
+.nav__button{
+    display: none;
+}
+
+@media (max-width:1320px) {
+    .intro{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header{
+        padding-left: 30px;
+    }
+    .intro__number{
+        padding-left: 200px;
+    }
+    
+}
+
+@media (max-width:1250px) {
+    .body{
+        background-size: auto;
+        background-position: left top;
+    }
+    .intro__number{
+        padding-left: 100px;
+    }
+    .number__description{
+        width: 190px;
+    }
+    .main-container{
+        width: auto;
+    }
+}
+
+@media (max-width: 1170px) {
+    .purpose{
+        display: flex;
+        flex-direction: column;
+    }
+    .box__description{
+        margin: auto;
+        padding: auto;
+    }
+    .box__title{
+        font-size: 55px;
+    }
+    .box__description{
+        font-size: 22px;
+        width: 500px;
+    }
+    .purpose__box{
+        padding-bottom: 150px;
+    }
+    .description--education::before{
+        left: 50px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .header{
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    .nav__list{
+        display: none;
+    }
+    .nav__button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .span{
+        height: 4px;
+        width: 100%;
+        background-color: black;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .intro__number{
+        padding-right: 100px;
+        padding-top: 200px;
+    }
+    .intro__number::before{
+        right: 100px;
+    }
+    .intro__title::before{
+        width: 244px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .intro__description{
+        padding-top: 80px;
+    }
+    .intro__title{
+        font-size: 45px;
+        line-height: 43px;
+        width: 400px;
+    }  
+    .intro__title::before{
+        top: 20px;
+    }  
+    .intro__text{
+        font-size: 20px;
+        line-height: 21px;
+        width: 480px;
+    }
+    .number__title{
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .intro__number::before{
+        width: 74px;
+        height: 74px;
+    }
+    .number__description{
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .intro__text{
+        font-size: 14px;
+        width: auto;
+    }
+    .intro__description{
+        width: auto;
+    }
+    .group__button{
+        width: 233px;
+        display: block;
+        gap: 0;
+        margin: auto;
+        padding-top: 33px;
+    }
+    .intro__button{
+        width: 233px;
+    }
+    .second__button{
+        display: none;
+    }
+    .number__title{
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .intro__title{
+        font-size: 36px;
+    }   
+    .intro__number::before{
+        width: 63px;
+        height: 63px;
+    }
+    .number__title{
+        width: 113px;
+        font-size: 32px;
+        margin: 0;
+    }
+    .number__description{
+        width: 113px;
+        font-size: 10px;
+    }
+    .header-img{
+        width: 177px;
+        height: 35px;
+    }
 }

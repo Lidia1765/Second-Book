@@ -40,33 +40,37 @@
               <a href="/" class="item__link"> Контакты </a>
             </li>
           </ul>
+          <button class="nav__button">
+            <span class="nav__button span"></span>
+            <span class="nav__button span"></span>
+            <span class="nav__button span"></span>
+          </button>
         </nav>
       </header>
-      <main class="main-container">
+      <main class="main">
         <section class="intro">
-          <h1 class="intro__title title">
-            Передай книгу. <br />
-            Измени мир.
-          </h1>
-          <p class="intro__text text">
-            Думаете, куда можно отдать старые книги? <br />
-            Вы можете передать их в благотворительный фонд.
-          </p>
-          <div class="intro__group">
-            <div class="group__button">
-              <button class="intro__button button">Передать книги</button>
-              <button class="second__button button">Подробнее</button>
+          <div class="intro__description">
+            <h1 class="intro__title title">Передай книгу. Измени мир.</h1>
+            <p class="intro__text text">
+              Думаете, куда можно отдать старые книги? Вы можете передать их в
+              благотворительный фонд.
+            </p>
+            <div class="intro__group">
+              <div class="group__button">
+                <button class="intro__button button">Передать книги</button>
+                <button class="second__button button">Подробнее</button>
+              </div>
             </div>
-            <div class="intro__number">
-              <p class="title">155 785</p>
-              <p class="description">книг переработано</p>
-            </div>
+          </div>
+          <div class="intro__number">
+            <p class="number__title title">155 785</p>
+            <p class="number__description description">книг переработано</p>
           </div>
         </section>
         <section class="purpose">
           <h2 class="visually-hidden">Цели</h2>
           <div class="purpose__box box">
-            <h3 class="box__title title first">Спасём деревья</h3>
+            <h3 class="box__title title title--trees">Спасём деревья</h3>
             <p class="box__description description">
               Прекратим вырубку леса и посадим новые деревья с
               <a href="/" class="box__link link"> www.trees.org.</a> Поддержим
@@ -74,8 +78,8 @@
             </p>
           </div>
           <div class="purpose__box box">
-            <h3 class="box__title title second">Образование</h3>
-            <p class="box__description description">
+            <h3 class="box__title title title--education">Образование</h3>
+            <p class="box__description description description--education">
               Поддержим школы вместе с
               <a href="/" class="box__link link"> www.donorschoose.org.</a>
               DonorsChoose помогают учебным заведениям в приобретении
@@ -83,7 +87,7 @@
             </p>
           </div>
           <div class="purpose__box box">
-            <h3 class="box__title title third">Благотворительность</h3>
+            <h3 class="box__title title title--charity">Благотворительность</h3>
             <p class="box__description description">
               Пересылаем книги в Африку с
               <a href="/" class="box__link link"> www.betterworldbooks.com.</a>
@@ -92,24 +96,23 @@
             </p>
           </div>
         </section>
+        <!--
         <section class="rules">
           <div>
             <img class="rules__img" src="images/imgs.png" alt="Изменим мир" />
           </div>
           <div class="rules__wrap">
             <h2 class="rules__title title">Как это работает?</h2>
-            <p class="rules__text text first-vector">
+            <p class="rules__text text text--vector-tree">
               Вы отдаёте 1 коробку книг = мы сажаем 10 деревьев
             </p>
-            <p class="rules__text text second-vector">
+            <p class="rules__text text text--vector-book">
               Вы отдаёте 1 коробку книг = мы финансируем образовательный проект
             </p>
             <p class="rules__description description">
-              Если в вашем городе нет отделения нашего <br />
-              фонда и вы отправляете книги <br />
-              транспортной компанией, мы <br />
-              компенсируем оплату перевозки по тарифу <br />
-              до 10кг.
+              Если в вашем городе нет отделения нашего фонда и вы отправляете
+              книги транспортной компанией, мы компенсируем оплату перевозки по
+              тарифу до 10кг.
             </p>
             <button class="rules__button button">Передать книги</button>
           </div>
@@ -131,13 +134,22 @@
         <section class="partners">
           <h2 class="partners__title title">Наши партнёры</h2>
           <div class="partners__img">
-            <img src="images/brand1.svg" alt=" Логотип компании trees" />
             <img
-              src="images/brand2.svg"
+              src="images/brand-trees-future.svg"
+              alt=" Логотип компании trees"
+            />
+            <img
+              src="images/brand-better-world-books.svg"
               alt="Логотип компании betterworldbooks"
             />
-            <img src="images/brand3.svg" alt="Логотип компании bookstore" />
-            <img src="images/brand4.svg" alt="Логотип компании donorschoose" />
+            <img
+              src="images/brand-bookstore.svg"
+              alt="Логотип компании bookstore"
+            />
+            <img
+              src="images/brand-donors-choose.svg"
+              alt="Логотип компании donorschoose"
+            />
           </div>
         </section>
         <section class="promo">
@@ -159,15 +171,21 @@
             </p>
             <div class="footer__phone">
               <img class="phone__img" src="images/phone.svg" alt="Телефон" />
-              <a href="+79999999999" class="phone">+7 999 999 99 99</a>
+              <a href="tel:+79999999999" class="phone">+7 999 999 99 99</a>
             </div>
           </div>
           <div class="footer__media">
             <p class="footer__text text">Мы в соцсетях</p>
             <div class="footer__img">
-              <img class="media__img" src="images/media.svg" alt="Соцсети" />
-              <img class="media__img" src="images/media.svg" alt="Соцсети" />
-              <img class="media__img" src="images/media.svg" alt="Соцсети" />
+              <a href="/" class="media__link">
+                <img class="media__img" src="images/media.svg" alt="Соцсети" />
+              </a>
+              <a href="/" class="media__link"
+                ><img class="media__img" src="images/media.svg" alt="Соцсети" />
+              </a>
+              <a href="/" class="media__link"
+                ><img class="media__img" src="images/media.svg" alt="Соцсети" />
+              </a>
             </div>
           </div>
         </div>
@@ -176,6 +194,7 @@
         </div>
         <p class="footer__copyright">© 2022 Second Book. Все права защищены.</p>
       </footer>
+      -->
     </div>
   </body>
 </html>
